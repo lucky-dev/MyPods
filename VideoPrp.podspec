@@ -10,6 +10,8 @@ Pod::Spec.new do |s|
   s.platform = :ios, "8.0"
   s.source = { :http => "https://github.com/lucky-dev/MyPods/raw/master/VideoPrp.tar.gz" }
   s.vendored_frameworks = "videoprp.framework"
+  s.source_files = "videoprp.framework/Headers/*.h"
+  s.public_header_files = "videoprp.framework/Headers/*.h"
   s.requires_arc = true
   s.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "${PODS_ROOT}/VideoPrp" }
   s.libraries = 'c++'
