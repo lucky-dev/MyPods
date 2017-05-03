@@ -10,6 +10,8 @@ Pod::Spec.new do |s|
   s.platform = :ios, "8.0"
   s.source = { :http => "https://github.com/lucky-dev/MyPods/raw/master/AgoraRtcEngineKit.tar.gz" }
   s.vendored_frameworks = "AgoraRtcEngineKit.framework"
+  s.source_files = "AgoraRtcEngineKit.framework/Headers/*.h"
+  s.public_header_files = "AgoraRtcEngineKit.framework/Headers/*.h"
   s.frameworks = "AVFoundation", "AudioToolbox", "CoreMedia", "CoreMotion", "CoreTelephony", "SystemConfiguration", "VideoToolbox"
   s.libraries = "c++"
   s.requires_arc = true
