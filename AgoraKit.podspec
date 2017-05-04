@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
   s.frameworks = "AVFoundation", "AudioToolbox", "CoreMedia", "CoreMotion", "CoreTelephony", "SystemConfiguration", "VideoToolbox"
   s.libraries = "c++"
   s.requires_arc = true
-  s.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "${PODS_ROOT}/Agora" }
+  s.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "${PODS_ROOT}/AgoraKit" }
 
 end
