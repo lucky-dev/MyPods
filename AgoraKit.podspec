@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.source_files = "AgoraRtcEngineKit.framework/Headers/*.h"
   s.public_header_files = "AgoraRtcEngineKit.framework/Headers/*.h"
   s.frameworks = "AVFoundation", "AudioToolbox", "CoreMedia", "CoreMotion", "CoreTelephony", "SystemConfiguration", "VideoToolbox"
-  s.libraries = "c++"
+  s.libraries = "c++", "libresolv"
   s.requires_arc = true
   s.xcconfig = { "FRAMEWORK_SEARCH_PATHS" => "${PODS_ROOT}/AgoraKit" }
 
